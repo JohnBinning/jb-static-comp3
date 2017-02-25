@@ -1,0 +1,65 @@
+
+
+img {
+  max-width: 25px;
+}
+
+.left-nav {
+  background-color: #354052;
+  color: #A2ADBF;
+}
+
+.nav-search {
+  background-image: url('icons/share.svg');
+  background-repeat: no-repeat;
+  text-indent: 20px;
+}
+
+.nav-search:focus {
+background-image: none;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-nav {
+  background-color: coral;
+}
+
+.top-section {
+  border: 3px solid green;
+}
+
+.main-title {
+  background-color:lightseagreen;
+}
+
+.graphs-section {
+  border: 3px solid red;
+}
+
+.circle-graphs-container {
+  background-color: lightslategray;
+}
+
+.bar-graph-container {
+  background-color: purple;
+}
+
+.job-description {
+  border: 3px solid orange;
+}
+
+.description-1 {
+  background-color: #6F7E95;
+}
+
+.bottom-links {
+  background-color: tan;
+}
+
+.main-title {
+  display: flex;
+}
