@@ -1,21 +1,56 @@
 
 
-img {
+/*img {
   max-width: 25px;
+}*/
+
+.icons {
+  max-width: 25px;
+}
+
+.c3po {
+  width: 25px;
 }
 
 .left-nav {
   background-color: #354052;
   color: #A2ADBF;
+  /*display: block;*/
+  width: 15%;
 }
 
-.nav-search {
+.right-section {
+  width: 85%;
+}
+
+.main-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  width: 50%
+}
+
+.header-right {
+  width: 50%;
+}
+
+.header-bottom {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#nav-search {
   background-image: url('icons/share.svg');
   background-repeat: no-repeat;
   text-indent: 20px;
+  width: 50%;
 }
 
-.nav-search:focus {
+#nav-search:focus {
 background-image: none;
 }
 
@@ -26,26 +61,81 @@ body {
 
 .top-nav {
   background-color: coral;
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
+  height: 30px;
 }
 
 .top-section {
   border: 3px solid green;
 }
 
-.main-title {
-  background-color:lightseagreen;
+
+h1 {
+  color: #5F5E63;
+}
+
+.page-links {
+  color: #9C9FA6;
+  box-sizing: border-box;
+}
+
+.page-links:hover {
+  color: #717277;
+  border-bottom: 3px solid #16A4FA;
+  box-sizing: border-box;
+}
+
+#blue-arrow {
+  height: 10px;
+  width: 10px;
+}
+
+.location-pointer {
+  height: 15px;
+}
+
+.preview-color {
+  color: #16A4FA;
 }
 
 .graphs-section {
   border: 3px solid red;
+  display: flex;
 }
 
 .circle-graphs-container {
   background-color: lightslategray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.circle-graphs {
+  width: 30%;
+}
+
+.circle-graphs-button {
+
 }
 
 .bar-graph-container {
   background-color: purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar-graph {
+  height: 100px;
+  width: 250px;
+}
+
+.up-arrow {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
 }
 
 .job-description {
@@ -56,10 +146,35 @@ body {
   background-color: #6F7E95;
 }
 
+.r2 {
+  width: 25px;
+}
+
 .bottom-links {
   background-color: tan;
 }
 
 .main-title {
   display: flex;
+}
+
+.facebook {
+  background-color: #4C72C3;
+}
+
+.tweet {
+  background-color: #01AAEF;
+}
+
+.linkedin {
+  background-color: #0381BC;
+}
+
+.link-buttons {
+  color: white;
+}
+
+.circle-graphs {
+  background-color: yellow;
+  width: 20%;
 }
