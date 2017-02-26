@@ -10,32 +10,32 @@
   </head>
   <body>
     <nav class="left-nav">
-      <section>
+      <section class="left-nav-sections top-left-nav">
         <img class="c3po" src="images/c3po.jpg" alt="headshot of C3PO">
         <p>C3PO<img class ="icons" src="icons/grey-arrow.png"></p>
       </section>
-      <section>
-        <h4>Main</h4>
-        <p><img class ="icons" src="icons/home.svg">HOME</p>
-        <p><img class ="icons" src="icons/briefcase.svg">JOBS</p>
-        <p><img class ="icons" src="icons/file.svg">RESUMES</p>
-        <p><img class ="icons" src="icons/tasks.svg">TASKS</p>
-        <p><img class ="icons" src="icons/calendar.svg">CALENDAR</p>
+      <section class="left-nav-sections">
+        <h4 class="left-nav-headers">Main</h4>
+        <p class="left-nav-content"><img class ="icons" src="icons/home.svg">HOME</p>
+        <p class="left-nav-content"><img class ="icons" src="icons/briefcase.svg">JOBS</p>
+        <p class="left-nav-content"><img class ="icons" src="icons/file.svg">RESUMES</p>
+        <p class="left-nav-content"><img class ="icons" src="icons/tasks.svg">TASKS</p>
+        <p class="left-nav-content"><img class ="icons" src="icons/calendar.svg">CALENDAR</p>
       </section>
-      <section>
-        <h4>Admin</h4>
-        <p><img class ="icons" src="icons/users.svg">USERS</p>
-        <p><img class ="icons" src="icons/location.svg">LOCATIONS</p>
-        <p><img class ="icons" src="icons/workflows.svg">WORKFLOWS</p>
-        <p><img class ="icons" src="icons/windows.svg">JOB BOARDS</p>
-        <p><img class ="icons" src="icons/share.svg">SOCIAL</p>
+      <section class="left-nav-sections">
+        <h4 class="left-nav-headers">Admin</h4>
+        <p class="left-nav-content"><img class ="icons" src="icons/users.svg">USERS</p>
+        <p class="left-nav-content"><img class ="icons" src="icons/location.svg">LOCATIONS</p>
+        <p class="left-nav-content"><img class ="icons" src="icons/workflows.svg">WORKFLOWS</p>
+        <p class="left-nav-content"><img class ="icons" src="icons/windows.svg">JOB BOARDS</p>
+        <p class="left-nav-content"><img class ="icons" src="icons/share.svg">SOCIAL</p>
       </section>
-      <section class="checkboxes">
-        <h4>Categories</h4>
-        <p><img class ="icons" src="icons/checked.svg">Administrative</p>
-        <p><img class ="icons" src="icons/checked.svg">Design</p>
-        <p><img class ="icons" src="icons/checked.svg">Executive</p>
-        <p><img class ="icons" src="icons/checked.svg">Human Resources</p>
+      <section class="checkboxes left-nav-sections">
+        <h4 class="left-nav-headers">Categories</h4>
+        <p class="left-nav-content"><img class ="icons" src="icons/checked.svg">Administrative</p>
+        <p class="left-nav-content"><img class ="icons" src="icons/checked.svg">Design</p>
+        <p class="left-nav-content"><img class ="icons" src="icons/checked.svg">Executive</p>
+        <p class="left-nav-content"><img class ="icons" src="icons/checked.svg">Human Resources</p>
       </section>
     </nav>
     <section class="right-section">
@@ -45,7 +45,10 @@
             <img class ="icons" id="blue-arrow" src="icons/left_arrow.svg">
             <img class ="menu-button" src="icons/burger.svg">
           </div>
-          <input id="nav-search" type="search" placeholder="Search for a job, task, or resume">
+          <div class="nav-search-container">
+            <img class="mag-glass" src="icons/search.svg">
+            <input id="nav-search" type="search" placeholder="Search for a job, task, or resume">
+        </div>
           <div class ="top-nav-icons user-plus"></div>
           <div class ="top-nav-icons bookmark"></div>
           <div class ="top-nav-icons dot-menu"></div>
@@ -53,10 +56,10 @@
         <header class="main-title">
           <article class="header-left">
             <h1>Human Cyborg Relations</h1>
-            <p><img class="location-pointer icons" src="icons/location.svg">Yavin IV, YA •<span class="preview-color"> Preview this post</span></p>
+            <p class="location-header"><img class="location-pointer icons" src="icons/location.svg">Yavin IV, YA •<span class="preview-color"> Preview this post</span></p>
           </article>
           <article class="header-right">
-            <button class="top-right-buttons open"><img class ="top-right-icons" src="icons/green_dot.png">Open</button>
+            <button class="top-right-buttons open"><img class ="top-right-icons open-icon" src="icons/green_dot.png">Open</button>
             <button class="top-right-buttons small"><img class ="top-right-icons" src="icons/bookmark.png"></button>
             <button class="top-right-buttons small"><img class ="top-right-icons" src="icons/pencil.svg"></button>
             <button class="top-right-buttons small"><img class ="top-right-icons" src="icons/delete-bin.svg"></button>
@@ -74,17 +77,20 @@
       </section>
       <section class="graphs-section">
         <article class="circle-graphs-container">
-          <div class="circle-graphs left-circle">
+          <div class="circle-graphs">
             <p class="circle-numbers">3,154</p>
             <p class="circle-title">APPLICANTS</p>
+            <div class="circle-total-border left-circle"></div>
           </div>
-          <div class="circle-graphs center-circle">
+          <div class="circle-graphs">
             <p class="circle-numbers">1,546</p>
             <p class="circle-title">INTERVIEWS</p>
+            <div class="circle-total-border center-circle"></div>
           </div>
-          <div class="circle-graphs right-circle">
+          <div class="circle-graphs">
             <p class="circle-numbers">912</p>
             <p class="circle-title">FORWARDS</p>
+            <div class="circle-total-border right-circle"></div>
           </div>
           <button class="circle-graphs-button">TOTALS - Out of 74878 views</button>
         </article>

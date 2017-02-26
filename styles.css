@@ -5,8 +5,39 @@ body {
   flex-direction: row;
 }
 
+button {
+  border-style: solid;
+  cursor: pointer;
+}
+
 .icons {
-  max-width: 15px;
+  max-width: 10px;
+  margin-right: 5px;
+}
+
+
+/*-----left-nav-----*/
+
+.left-nav-sections {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  margin-left: 10px;
+  border-bottom: 2px solid #2C3749;
+  max-height: 200px;
+}
+
+.top-left-nav {
+  align-items: center;
+}
+
+.left-nav-content {
+  width: 100%;
+  /*margin: 0;*/
+}
+
+.left-nav-headers {
+  font-size: .68em;
 }
 
 .c3po {
@@ -19,16 +50,15 @@ body {
   color: #A2ADBF;
   width: 15%;
   font-size: .7em;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
 }
 
 .right-section {
   width: 85%;
 }
+
+/*-----top-right-nav-----*/
 
 .main-title {
   display: flex;
@@ -43,7 +73,6 @@ body {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .header-bottom {
@@ -59,33 +88,70 @@ body {
   margin-left: 2%;
 }
 
-.small {
-  border-radius: 50%;
-  width: 30px;
-}
 
 .open {
   border-radius: 25px;
+  font-size: .75em;
+  color: #7B818D;
+  margin-left: 42%;
+  width: 70px;
+  padding-top: 5px;
 }
 
 .top-right-icons {
   height: 15px;
   width: 15px;
+  vertical-align: -15%;
+}
+
+.small {
+  border-radius: 50%;
+  width: 30px;
+}
+
+.open-icon {
+  vertical-align: -14%;
+  margin-right: 5%;
+  max-height: 12px;
+  max-width: 12px;
+}
+
+.location-header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  color: #9C9FA6;
+}
+
+.location-pointer {
+  height: 15px;
+  vertical-align: -18%;
+  /*padding-top: 10px;*/
 }
 
 #nav-search {
-  background-image: url('icons/search.svg');
+  /*background-image: url('icons/search.svg');*/
   background-repeat: no-repeat;
   text-indent: 20px;
-  width: 65%;
   padding: 6px;
-  /*height: 10px;*/
   border: none;
   margin-left: 1%;
+  width: 65%;
+
 }
 
 #nav-search:focus {
 background-image: none;
+}
+
+.nav-search-container {
+  width: 90%;
+
+}
+
+.mag-glass {
+  margin-left: 10px;
+  max-height: 20px;
+  max-width: 20px;
 }
 
 .burger {
@@ -96,7 +162,7 @@ background-image: none;
 }
 
 .menu-button {
-  width: 70%;
+  width: 20px;
 }
 
 .top-nav {
@@ -157,6 +223,8 @@ background-image: none;
 
 h1 {
   color: #5F5E63;
+  font-size: 1.3em;
+  font-weight: 300;
 }
 
 .page-links {
@@ -179,19 +247,19 @@ h1 {
   width: 10px;
 }
 
-.location-pointer {
-  height: 15px;
-}
-
 .preview-color {
   color: #16A4FA;
 }
+
+/*-----middle-graphs-----*/
+
 
 .graphs-section {
   display: flex;
   flex-wrap: wrap;
   background-color: #EDF2F6;
   justify-content: space-around;
+  padding-top: 10px;
 }
 
 .circle-graphs-container {
@@ -203,7 +271,7 @@ h1 {
 
 .circle-graphs {
   align-items: center;
-  border: 8px solid lightgrey;
+  /*border: 8px solid lightgrey;*/
   border-radius: 50%;
   height: 135px;
   display: flex;
@@ -223,6 +291,18 @@ h1 {
 .circle-title {
   margin-top: 2px;
   font-size: .8em;
+}
+
+.circle-total-border {
+  border: 8px solid lightgrey;
+  /*border-bottom: 8px solid #AD6CAC;*/
+  position: absolute;
+  transform: rotate(45deg);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /*top: 5px;*/
+
 }
 
 .left-circle {
@@ -291,22 +371,28 @@ h1 {
   margin: 10px 0;
 }
 
-hr {
-  width: 45%;
+.up-arrow-img {
+  height: 15px;
 }
 
 /*.up-arrow {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  color: #5c6375;
+height: 25px;
+width: 25px;
+border-radius: 50%;
+color: #5c6375;
 }*/
 
-.up-arrow-img {
-  height: 15px;
-
+.bottom-section {
+  display: flex;
+  background-color: #EDF2F6;
+  justify-content: space-around;;
 }
 
+/*-----job-description-table-----*/
+
+hr {
+  width: 45%;
+}
 
 .job-description {
   /*border: 3px solid orange;*/
@@ -372,6 +458,8 @@ td {
   padding: 10px;
 }
 
+/*-----bottom-right-links-----*/
+
 .bottom-links {
   /*background-color: tan;*/
   width: 35%;
@@ -385,16 +473,6 @@ td {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.main-title {
-  display: flex;
-}
-
-.bottom-section {
-  display: flex;
-  background-color: #EDF2F6;
-  justify-content: space-around;;
 }
 
 .facebook {
@@ -450,10 +528,6 @@ td {
   border: none;
 }
 
-button {
-  border-style: solid;
-  cursor: pointer;
-}
 
 
 
