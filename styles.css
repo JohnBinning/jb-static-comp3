@@ -170,19 +170,51 @@ hr {
 }
 
 .job-description-left {
-  margin: 5% 10% 5% 5%;
+  width: 40%;
 }
+
+.job-description-right {
+  width: 60%;
+  display: flex;
+  vertical-align: center;
+  flex-wrap: wrap;
+}
+
+.top-job-description {
+  color: white;
+  text-align: left;
+  padding: 2% 0 2% 2%;
+}
+
+.jobs-pencil {
+  margin-left: 5%;
+}
+
 
 .description-1 {
   background-color: #6F7E95;
 }
 
-.descriptions {
-  display: flex;
+td {
+  color: #6f7e95;
+  text-align: left;
+  padding: 15px 10px;
+  vertical-align: top;
 }
 
 .r2 {
+  height: 25px;
   width: 25px;
+  border-radius: 50%;
+}
+
+.r2-container {
+  display: flex;
+  align-items: center;
+}
+
+.r2-td {
+  padding: 10px;
 }
 
 .bottom-links {
@@ -238,7 +270,6 @@ hr {
 
 .bottom-right-titles {
   display: flex;
-  /*justify-content: left;*/
   align-items: center;
 }
 
