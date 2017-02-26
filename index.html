@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="normalize.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="styles.css" type="text/css" rel="stylesheet">
@@ -42,12 +43,12 @@
         <nav class="top-nav">
           <div class="burger">
             <img class ="icons" id="blue-arrow" src="icons/left_arrow.svg">
-            <img class ="icons" src="icons/menu-button.svg">
+            <img class ="menu-button" src="icons/burger.svg">
           </div>
           <input id="nav-search" type="search" placeholder="Search for a job, task, or resume">
-          <img class ="icons" src="icons/user_plus.svg">
-          <img class ="icons" src="icons/bookmark.svg">
-          <img class ="icons" src="icons/menu.svg">
+          <div class ="top-nav-icons user-plus"></div>
+          <div class ="top-nav-icons bookmark"></div>
+          <div class ="top-nav-icons dot-menu"></div>
         </nav>
         <header class="main-title">
           <article class="header-left">
@@ -56,9 +57,9 @@
           </article>
           <article class="header-right">
             <button class="top-right-buttons open"><img class ="top-right-icons" src="icons/green_dot.png">Open</button>
-            <button class="top-right-buttons"><img class ="top-right-icons" src="icons/bookmark.png"></button>
-            <button class="top-right-buttons"><img class ="top-right-icons" src="icons/pencil.svg"></button>
-            <button class="top-right-buttons"><img class ="top-right-icons" src="icons/delete-bin.svg"></button>
+            <button class="top-right-buttons small"><img class ="top-right-icons" src="icons/bookmark.png"></button>
+            <button class="top-right-buttons small"><img class ="top-right-icons" src="icons/pencil.svg"></button>
+            <button class="top-right-buttons small"><img class ="top-right-icons" src="icons/delete-bin.svg"></button>
           </article>
           <article class="header-bottom">
             <h3 class="page-links">SUMMARY</h3>
@@ -75,15 +76,15 @@
         <article class="circle-graphs-container">
           <div class="circle-graphs left-circle">
             <p class="circle-numbers">3,154</p>
-            <p>APPLICANTS</p>
+            <p class="circle-title">APPLICANTS</p>
           </div>
           <div class="circle-graphs center-circle">
             <p class="circle-numbers">1,546</p>
-            <p>INTERVIEWS</p>
+            <p class="circle-title">INTERVIEWS</p>
           </div>
           <div class="circle-graphs right-circle">
             <p class="circle-numbers">912</p>
-            <p>FORWARDS</p>
+            <p class="circle-title">FORWARDS</p>
           </div>
           <button class="circle-graphs-button">TOTALS - Out of 74878 views</button>
         </article>
@@ -91,9 +92,13 @@
           <img class="bar-graph" src="images/bar-graphe.png">
           <button class="bar-graph-button">APPLICANTS/DAY</button>
         </article>
-        <div class="line-divider">
-          <hr><button class="up-arrow">^</button><hr>
-        </div>
+        <section class="line-divider-container">
+          <hr>
+          <div class="line-divider">
+            <img class="up-arrow-img" src="icons/grey-arrow.png">
+          </div>
+          <hr>
+        </section>
       </section>
       <section class="bottom-section">
         <!-- <table class="job-description">
@@ -179,7 +184,7 @@
             <h3 class="bottom-right-titles"><img class ="icons" src="icons/falcon.png">Upload Resumes fast</h3>
             <p class="bottom-right-content">Your resumes will make the Kessell run in less than 12 parsecs.  Our system is the fastest hunk of junk in the galaxy.</p>
             <form class="bottom-right-forms">
-              <input type="text" value="aarrrwghggwaaah@wookie.com">
+              <input class="bottom-form" type="text" value="aarrrwghggwaaah@wookie.com">
             </form>
           </div>
         </article>
