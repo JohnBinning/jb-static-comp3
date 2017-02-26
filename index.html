@@ -55,9 +55,9 @@
           </article>
           <article class="header-right">
             <button><img class ="icons" src="icons/green_dot.png">Open</button>
-            <button><img class ="icons" src="icons/bookmark.svg"></button>
+            <button><img class ="icons" src="icons/bookmark.png"></button>
             <button><img class ="icons" src="icons/pencil.svg"></button>
-            <button><img class ="icons" src="icons/garbage.svg"></button>
+            <button><img class ="icons" src="icons/delete-bin.svg"></button>
           </article>
           <article class="header-bottom">
             <h3 class="page-links">SUMMARY</h3>
@@ -88,75 +88,79 @@
         </article>
         <article class="bar-graph-container">
           <img class="bar-graph" src="images/bar-graphe.png">
-          <button>APPLICANTS/DAY</button>
+          <button class="bar-graph-button">APPLICANTS/DAY</button>
         </article>
-        <hr><button class="up-arrow">^</button><hr>
+        <div class="line-divider">
+          <hr><button class="up-arrow">^</button><hr>
+        </div>
       </section>
       <section class="bottom-section">
-        <article class="job-description">
-          <div class="Descriptions description-1">
-            <h3>Job Description</h3>
+        <table class="job-description">
+          <th class="descriptions description-1">
+            <tr>
+            <p>Job Description</p>
             <button><img src="icons/fill_pencil.svg">Edit</button>
-          </div>
-          <div>
-            <p>POSITION TITLE</p>
+          </tr>
+          </th>
+          <div class="descriptions">
+            <p class="job-description-left">POSITION TITLE</p>
             <p>Human Cyborg Relations</p>
           </div>
-          <div>
-            <p>LOCATION</p>
+          <div class="descriptions">
+            <p class="job-description-left">LOCATION</p>
             <p>Yavin IV, YA</p>
           </div>
-          <div>
-            <p>EMPLOYMENT TYPE</p>
+          <div class="descriptions">
+            <p class="job-description-left">EMPLOYMENT TYPE</p>
             <p>Full Time</p>
           </div>
-          <div>
-            <p>EXPERIENCE</p>
+          <div class="descriptions">
+            <p class="job-description-left">EXPERIENCE</p>
             <p>Padawan</p>
           </div>
-          <div>
-            <p>STATUS</p>
+          <div class="descriptions">
+            <p class="job-description-left">STATUS</p>
             <p>Open</p>
           </div>
-          <div>
-            <p>DESCRIPTION</p>
+          <div class="descriptions">
+            <p class="job-description-left">DESCRIPTION</p>
             <p>Coruscant sidious solo skywalker leia darth darth maul. Antilles tusken raider hutt kashyyyk darth solo hutt jar. Solo jango organa hoth aayla vader calrissian boba lando. Mara thrawn boba mon boba moff organa darth. Mandalorians binks palpatine cade binks yavin. Baba vader coruscant skywalker luke. Solo darth solo cade jade fett dagobah cade yoda. Darth jawa ewok owen biggs jade solo bespin. Skywalker c-3p0 calrissian skywalker ackbar. Ponda solo windu ventress gamorrean antilles endor vader. Darth mara darth skywalker darth palpatine gamorrean.</p>
           </div>
-          <div>
-            <p>Hiring Lead</p>
+          <div class="descriptions">
+            <p class="job-description-left">HIRING LEAD</p>
             <p><img class="r2" src="images/r2d2.png">R2D2</p>
           </div>
-          <div>
-            <p>APPROVED SALARY</p>
+          <div class="descriptions">
+            <p class="job-description-left">APPROVED SALARY</p>
             <p>$58,000</p>
           </div>
-        </article>
+        </table>
         <article class="bottom-links">
-          <div>
+          <div class="link-container">
             <button class="facebook link-buttons"><img class ="icons" src="icons/facebook.svg">Post to Facebook</button>
             <button class="tweet link-buttons"><img class ="icons" src="icons/twitter.svg">Tweet this Job</button>
             <button class="linkedin link-buttons"><img  class ="icons"  src="icons/linkedin.svg">Post to Linkedin</button>
           </div>
           <div>
-            <h3><img class ="icons" src="icons/world.svg">Link to the force</h3>
-            <p>Darth ackbar calamari organa wicket moff lando yoda. Secura vader solo ben dantooine antilles antilles moff. Ackbar amidala amidala droid dooku organa tusken raider.</p>
-            <form>
-              <input type="text" value="starwars.wikia.com">
-              <button>Copy</button>
+            <h3 class="bottom-right-titles"><img class ="icons" src="icons/world.svg">Link to the force</h3>
+            <p class="bottom-right-content">Darth ackbar calamari organa wicket moff lando yoda. Secura vader solo ben dantooine antilles antilles moff. Ackbar amidala amidala droid dooku organa tusken raider.</p>
+            <form class="bottom-right-forms">
+              <input class="copy-inputs" type="text" value="starwars.wikia.com">
+              <button class="copy-buttons">Copy</button>
             </form>
           </div>
           <div>
-            <h3><img class ="icons" src="icons/robot.svg">Use the Force Widget!</h3>
-            <p>Trust your feelings you must.  Click or do not click, there is no try!  Strong is the widget, mind what you have learned, save you it can!</p>
-            <form>
-              <input type="text" value="starwars.wikia.com">
-              <button>Copy</button>
+            <h3 class="bottom-right-titles"><img class ="icons" src="icons/robot.svg">Use the Force Widget!</h3>
+            <p class="bottom-right-content">Trust your feelings you must.  Click or do not click, there is no try!  Strong is the widget, mind what you have learned, save you it can!</p>
+            <form class="bottom-right-forms">
+              <input class="copy-inputs" type="text" value="starwars.wikia.com">
+              <button class="copy-buttons">Copy</button>
             </form>
           </div>
           <div>
-            <h3><img class ="icons" src="icons/falcon.png">Upload Resumes fast</h3>
-            <p>Your resumes will make the Kessell run in less than 12 parsecs.  Our system is the fastest hunk of junk in the galaxy.</p>
-            <form>
+            <h3 class="bottom-right-titles"><img class ="icons" src="icons/falcon.png">Upload Resumes fast</h3>
+            <p class="bottom-right-content">Your resumes will make the Kessell run in less than 12 parsecs.  Our system is the fastest hunk of junk in the galaxy.</p>
+            <form class="bottom-right-forms">
               <input type="text" value="aarrrwghggwaaah@wookie.com">
             </form>
           </div>

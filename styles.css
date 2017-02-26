@@ -44,7 +44,7 @@
 }
 
 #nav-search {
-  background-image: url('icons/share.svg');
+  background-image: url('icons/search.svg');
   background-repeat: no-repeat;
   text-indent: 20px;
   width: 50%;
@@ -69,6 +69,7 @@ body {
 
 .top-section {
   border: 3px solid green;
+  background-color: #EDF2F6;
 }
 
 
@@ -103,10 +104,12 @@ h1 {
 .graphs-section {
   border: 3px solid red;
   display: flex;
+  flex-wrap: wrap;
+  background-color: #EDF2F6;
+
 }
 
 .circle-graphs-container {
-  background-color: lightslategray;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -116,20 +119,41 @@ h1 {
   width: 30%;
 }
 
+
 .circle-graphs-button {
 
 }
 
 .bar-graph-container {
-  background-color: purple;
+  border: 3px solid purple;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .bar-graph {
   height: 100px;
   width: 250px;
+}
+
+.bar-graph-button {
+  background-color: white;
+  color: #5c6375;
+  border-radius: 25px;
+  border: 2px solid #a9b0ba
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.line-divider {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+hr {
+  width: 40%;
 }
 
 .up-arrow {
@@ -140,10 +164,21 @@ h1 {
 
 .job-description {
   border: 3px solid orange;
+  /*display: inline-flex;
+  flex-direction: column;*/
+  width: 55%;
+}
+
+.job-description-left {
+  margin: 5% 10% 5% 5%;
 }
 
 .description-1 {
   background-color: #6F7E95;
+}
+
+.descriptions {
+  display: flex;
 }
 
 .r2 {
@@ -152,10 +187,27 @@ h1 {
 
 .bottom-links {
   background-color: tan;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-title {
   display: flex;
+}
+
+.bottom-section {
+  display: flex;
+  background-color: #EDF2F6;
+  justify-content: space-around;;
 }
 
 .facebook {
@@ -172,9 +224,39 @@ h1 {
 
 .link-buttons {
   color: white;
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .circle-graphs {
   background-color: yellow;
   width: 20%;
+}
+
+
+.bottom-right-titles {
+  display: flex;
+  /*justify-content: left;*/
+  align-items: center;
+}
+
+.bottom-right-content,
+.bottom-right-titles,
+.bottom-right-forms  {
+  margin-left: 10%;
+}
+
+/*.copy-buttons {
+  margin-left: 0;
+}
+
+.copy-inputs {
+  margin-right: 0;
+}*/
+
+.bottom-right-forms {
+  display: flex;
+  justify-content: center;
 }
