@@ -58,13 +58,17 @@ button {
   border-radius: 50%;
 }
 
+.down-arrow {
+  margin-left: 5px;
+  max-width: 10px;
+}
+
 .left-nav {
   background-color: #354052;
   color: #A2ADBF;
   width: 15%;
   font-size: .7em;
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
+  padding-bottom: 10px;
 }
 
 .right-section {
@@ -104,8 +108,9 @@ button {
 .header-bottom {
   box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;;
   width: 100%;
+  padding-right: 2.5%;
 }
 
 .top-right-buttons {
@@ -202,7 +207,7 @@ background-image: none;
   align-items: center;
   height: 30px;
   border-bottom: 1px solid #eef2f5;
-  padding: 15px 0;
+  padding: 15px 0 15px 8px;
   width: 100%;
 }
 
@@ -248,7 +253,6 @@ background-image: none;
 
 .top-section {
   background-color: white;
-  padding-left: 15px;
 }
 
 
@@ -358,7 +362,7 @@ h1 {
 
 .bar-graph {
   height: 125px;
-  width: 275px;
+  width: 295px;
   padding: 10px 0;
 }
 .circle-graphs-button {
@@ -415,7 +419,8 @@ h1 {
 .bottom-section {
   display: flex;
   background-color: #EDF2F6;
-  justify-content: space-around;;
+  justify-content: space-around;
+  padding-bottom: 10px;
 }
 
 /*-----job-description-table-----*/
@@ -545,7 +550,11 @@ tr {
   border: none;
   align-items: center;
   justify-content: space-around;
-  height: 30%;
+  height: 60px;
+}
+
+.link-buttons:hover {
+  box-shadow: 1px 1px 2px 2px #BDBDBD;
 }
 
 .facebook {
@@ -579,6 +588,13 @@ tr {
   color: #848B95;
 }
 
+
+.sharing-icons {
+  max-width: 15px;
+  max-height: 15px;
+  margin-right: 3%;
+}
+
 .copy-inputs {
   width: 80%;
   height: 20%;
@@ -590,7 +606,7 @@ tr {
   border: none;
 }
 
-@media screen and (max-width: 955px) {
+@media screen and (max-width: 952px) {
 
   .graphs-section {
     flex-direction: column;
@@ -599,6 +615,10 @@ tr {
 
   .circle-graphs-container {
     width: 100%;
+  }
+
+  .bar-graph {
+    width: 300px;
   }
 
 }
@@ -650,6 +670,7 @@ tr {
     justify-content: flex-start;
   }
 
+
 }
 
 @media screen and (max-width: 650px) {
@@ -665,6 +686,11 @@ tr {
 
   .copy-inputs {
     width: 70%;
+  }
+
+  .link-buttons {
+    height: 40px;
+    font-size: .8em;
   }
 
 }
@@ -715,4 +741,50 @@ tr {
     width: 75%;
   }
 
+  .link-buttons-text {
+    display: none;
+  }
+
+  .link-container {
+    flex-direction: row;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .link-buttons {
+    margin-top: 10%;
+    margin-left: 3%;
+    width: 30%;
+    height: 50px;
+  }
+
+  .facebook {
+    margin-left: 2%;
+  }
+
+  .sharing-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom-links {
+    width: 75%;
+  }
+
+  .bottom-right-content,
+  .bottom-right-forms {
+     margin-left: 0;
+  }
+
+  .bottom-right-titles {
+    margin-left: 10%;
+    width: 70%;
+  }
+
+
+  .bar-graph {
+    height: 125px;
+    width: 275px;
+  }
 }
