@@ -828,6 +828,10 @@ tr {
     width: 70%;
   }
 
+  .tweet-right {
+    display: none;
+  }
+
   .bar-graph {
     height: 125px;
     width: 275px;
